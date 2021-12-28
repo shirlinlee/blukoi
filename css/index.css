@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap");
+@font-face {
+  font-family: "futuraBt";
+  src: url("../fonts/futura medium bt.ttf");
+}
+
+@font-face {
+  font-family: "futuraBt";
+  src: url("../fonts/futura light bt.ttf");
+  font-weight: 300;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.W720 {
+  width: 100%;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.W960 {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.W20 {
+  width: 20%;
+}
+
+.W25 {
+  width: 25%;
+}
+
+.W33 {
+  width: 33%;
+}
+
+.W50 {
+  width: 50%;
+}
+
+.W67 {
+  width: 67%;
+}
+
+.W75 {
+  width: 75%;
+}
+
+.f12 {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.f14 {
+  font-size: 14px !important;
+  line-height: 1.5;
+}
+
+.f16 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.f18 {
+  font-size: 18px !important;
+}
+
+.f21 {
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.f24 {
+  font-size: 24px !important;
+}
+
+.f30 {
+  font-size: 30px !important;
+}
+
+.f33 {
+  font-size: 33px !important;
+}
+
+.f36 {
+  font-size: 36px;
+}
+
+.f45 {
+  font-size: 45px;
+}
+
+.bg_grey {
+  background-color: #f2f2f2;
+}
+
+.bg_white {
+  background-color: #fff;
+}
+
+.bg_cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.opa0 {
+  opacity: 0;
+}
+
+.opa1 {
+  opacity: 1;
+}
+
+.f_white {
+  color: #fff;
+}
+
+.f_grey {
+  color: #595757;
+}
+
+.f_light_grey {
+  color: #837452;
+}
+
+.f_blue {
+  color: #23385c;
+}
+
+.f_b {
+  font-weight: bold;
+}
+
+.t_center {
+  text-align: center;
+}
+
+.t_left {
+  text-align: left;
+}
+
+.d_flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.d_none {
+  display: none;
+}
+
+.br20 {
+  border-radius: 20px;
+}
+
+.mb {
+  display: none !important;
+}
+
+.pc {
+  display: inline-block !important;
+}
+
+.ham {
+  display: none;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+}
+
+#header .W720 {
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .W720 .logo {
+  width: 80px;
+  margin: 20px 0;
+}
+
+#header .W720 .nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .W720 .nav li {
+  color: #fff;
+  font-size: 12px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+#header .W720 .nav a {
+  width: 30px;
+  padding: 6px;
+}
+
+#kv {
+  background-color: #000;
+  background-image: url(../images/bg.jpg);
+  height: 100vh;
+}
+
+#kv .W720 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#kv .W720 .txt {
+  width: 280px;
+  text-align: center;
+}
+
+#kv .W720 .txt h1 {
+  opacity: 0;
+  height: 0;
+}
+
+#kv .W720 .txt h2,
+#kv .W720 .txt h3 {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+#kv .W720 .txt h4 {
+  letter-spacing: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .mb {
+    display: inline-block !important;
+  }
+  .pc {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .f14 {
+    font-size: 13px !important;
+  }
+  .f18 {
+    font-size: 15px !important;
+  }
+  .f21 {
+    font-size: 17px;
+  }
+  .f24 {
+    font-size: 19px !important;
+  }
+  .f30 {
+    font-size: 21px !important;
+  }
+  .f33 {
+    font-size: 26px !important;
+  }
+  .f36 {
+    font-size: 29px;
+  }
+  .f45 {
+    font-size: 32px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
