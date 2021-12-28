@@ -1,24 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap");
 @font-face {
-  font-family: "futuraBt";
+  font-family: "futura bt";
   src: url("../fonts/futura medium bt.ttf");
-}
-
-@font-face {
-  font-family: "futuraBt";
-  src: url("../fonts/futura light bt.ttf");
-  font-weight: 300;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: normal;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
-.W720 {
+.W1440 {
   width: 100%;
-  max-width: 760px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -52,8 +47,8 @@
   width: 67%;
 }
 
-.W75 {
-  width: 75%;
+.W100 {
+  width: 100%;
 }
 
 .f12 {
@@ -71,12 +66,12 @@
   line-height: 1.5;
 }
 
-.f18 {
-  font-size: 18px !important;
+.f19 {
+  font-size: 19px !important;
 }
 
-.f21 {
-  font-size: 21px;
+.f22 {
+  font-size: 22px;
   line-height: 1.3;
 }
 
@@ -84,24 +79,28 @@
   font-size: 24px !important;
 }
 
+.f26 {
+  font-size: 26px !important;
+}
+
 .f30 {
   font-size: 30px !important;
 }
 
-.f33 {
-  font-size: 33px !important;
+.f34 {
+  font-size: 34px !important;
 }
 
 .f36 {
   font-size: 36px;
 }
 
-.f45 {
-  font-size: 45px;
+.f50 {
+  font-size: 50px;
 }
 
-.bg_grey {
-  background-color: #f2f2f2;
+.bg_blue {
+  background-color: #22395b;
 }
 
 .bg_white {
@@ -178,12 +177,51 @@
   display: none;
 }
 
+h2 {
+  font-family: "futura bt";
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  position: relative;
+  padding-top: 45px;
+  letter-spacing: 5px;
+}
+
+h2:before {
+  content: '';
+  display: block;
+  width: 110px;
+  height: 27px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  background-image: url(../images/discover.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+h2:after {
+  content: ".";
+  color: #837452;
+  font-size: 43px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 #header {
   position: fixed;
   width: 100%;
 }
 
-#header .W720 {
+#header .W1440 {
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -193,27 +231,26 @@
           align-items: center;
 }
 
-#header .W720 .logo {
-  width: 80px;
+#header .W1440 .logo {
+  width: 140px;
   margin: 20px 0;
 }
 
-#header .W720 .nav {
+#header .W1440 .nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#header .W720 .nav li {
+#header .W1440 .nav li {
   color: #fff;
-  font-size: 12px;
   padding: 0 10px;
   cursor: pointer;
 }
 
-#header .W720 .nav a {
-  width: 30px;
-  padding: 6px;
+#header .W1440 .nav a {
+  width: 40px;
+  padding: 6px 10px;
 }
 
 #kv {
@@ -222,7 +259,7 @@
   height: 100vh;
 }
 
-#kv .W720 {
+#kv .W1440 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -233,24 +270,299 @@
   -o-transform: translate(-50%, -50%);
 }
 
-#kv .W720 .txt {
-  width: 280px;
+#kv .W1440 .txt {
+  width: 40%;
   text-align: center;
 }
 
-#kv .W720 .txt h1 {
+#kv .W1440 .txt h1 {
   opacity: 0;
   height: 0;
 }
 
-#kv .W720 .txt h2,
-#kv .W720 .txt h3 {
+#kv .W1440 .txt h2,
+#kv .W1440 .txt h3 {
   letter-spacing: 4px;
   margin-bottom: 10px;
 }
 
-#kv .W720 .txt h4 {
+#kv .W1440 .txt h4 {
   letter-spacing: 7px;
+}
+
+#chef {
+  padding: 200px 0;
+}
+
+#chef h2 {
+  margin-bottom: 180px;
+}
+
+#chef .W100 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#chef .W100 .W50 {
+  padding: 0 10px;
+}
+
+#chef .W100 .W50 h3 {
+  font-family: "futura bt";
+  letter-spacing: 4px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+#chef .W100 .W50 h3:before {
+  content: "";
+  width: 120px;
+  height: 1px;
+  background-color: #837452;
+  display: block;
+  position: absolute;
+  top: 15px;
+}
+
+#chef .W100 .W50 h4 {
+  white-space: nowrap;
+  letter-spacing: 6px;
+  font-weight: 300;
+}
+
+#chef .W100 .W50 p {
+  margin: 70px 0 100px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+#chef .W100 .W50 a {
+  font-size: 14px;
+  padding-right: 40px;
+  background-image: url(../images/arrow.svg);
+  background-position: right 0 center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+#chef .W100 .W50.pic {
+  position: relative;
+  z-index: 2;
+}
+
+#chef .W100 .W50.txt {
+  padding: 0 0 0 130px;
+  position: relative;
+  z-index: 1;
+}
+
+#chef .W100.lee h3:before {
+  left: -140px;
+}
+
+#chef .W100.dang h3:before {
+  right: -10px;
+}
+
+#menu {
+  padding: 200px 0;
+  position: relative;
+}
+
+#menu .mountain {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 140px;
+  z-index: 0;
+}
+
+#menu .mountain.m2 {
+  top: 180px;
+}
+
+#menu .t_center {
+  position: relative;
+  z-index: 2;
+}
+
+#menu .t_center h4 {
+  letter-spacing: 5px;
+}
+
+#menu .t_center p {
+  margin: 25px 0;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+#menu .W100.d_flex {
+  padding: 140px 0;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+#menu .W100.d_flex .txt {
+  width: 53%;
+  line-height: 1.6;
+  position: relative;
+  z-index: 3;
+}
+
+#menu .W100.d_flex .txt h5 {
+  margin-bottom: 15px;
+  letter-spacing: 6px;
+  font-weight: 300;
+  position: relative;
+}
+
+#menu .W100.d_flex .txt h5:before, #menu .W100.d_flex .txt h5:after {
+  content: '';
+  background-color: #fff;
+  width: 180px;
+  height: 1px;
+  opacity: .3;
+  display: block;
+  left: -240px;
+  position: absolute;
+  top: 20px;
+}
+
+#menu .W100.d_flex .txt h5:after {
+  width: 200px;
+  transform: translate(0, 3px);
+  -webkit-transform: translate(0, 3px);
+  -moz-transform: translate(0, 3px);
+  -ms-transform: translate(0, 3px);
+  -o-transform: translate(0, 3px);
+}
+
+#menu .W100.d_flex .txt h6 {
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  font-family: "futura bt";
+  line-height: 1.4;
+}
+
+#menu .W100.d_flex .txt p {
+  letter-spacing: 1px;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+}
+
+#menu .W100.d_flex .txt p:before, #menu .W100.d_flex .txt p:after {
+  content: '';
+  background-color: #fff;
+  height: 180px;
+  width: 1px;
+  opacity: .3;
+  display: block;
+  right: 3px;
+  position: absolute;
+  top: 90px;
+}
+
+#menu .W100.d_flex .txt p:after {
+  height: 200px;
+  transform: translate(-3px, 0);
+  -webkit-transform: translate(-3px, 0);
+  -moz-transform: translate(-3px, 0);
+  -ms-transform: translate(-3px, 0);
+  -o-transform: translate(-3px, 0);
+}
+
+#menu .W100.d_flex .pic {
+  width: 47%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
+}
+
+#menu .W100.d_flex .main_pic {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: 0;
+  width: 40%;
+  max-width: 700px;
+  transform: translate(-50%, 15%);
+  -webkit-transform: translate(-50%, 15%);
+  -moz-transform: translate(-50%, 15%);
+  -ms-transform: translate(-50%, 15%);
+  -o-transform: translate(-50%, 15%);
+}
+
+#menu .W100.d_flex.pure .pic {
+  background-image: url(../images/menu_01.jpg);
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
+}
+
+#menu .W100.d_flex.pure .txt {
+  padding: 120px 0 380px 370px;
+}
+
+#menu .W100.d_flex.tasty .pic {
+  background-image: url(../images/menu_03.jpg);
+  border-top-left-radius: 350px;
+  border-bottom-left-radius: 350px;
+}
+
+#menu .W100.d_flex.tasty .txt {
+  padding: 200px 300px 300px 130px;
+}
+
+#menu .W100.d_flex.tasty .txt h5:before, #menu .W100.d_flex.tasty .txt h5:after {
+  left: inherit;
+  right: -220px;
+}
+
+#menu .W100.d_flex.tasty .txt p:before, #menu .W100.d_flex.tasty .txt p:after {
+  right: inherit;
+  left: 3px;
+}
+
+#menu .W100.d_flex.tasty .main_pic {
+  transform: translate(-50%, 30%);
+  -webkit-transform: translate(-50%, 30%);
+  -moz-transform: translate(-50%, 30%);
+  -ms-transform: translate(-50%, 30%);
+  -o-transform: translate(-50%, 30%);
+}
+
+#wines {
+  padding: 100px 0;
+  position: relative;
+}
+
+#wines ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wines li {
+  width: calc(33% - 10px);
+}
+
+#wines li .txt {
+  background-image: url(../images/wines_01.jpg);
+}
+
+#wines li .txt h6 {
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  font-family: "futura bt";
+  line-height: 1.4;
+}
+
+#wines li .txt p {
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
